@@ -98,6 +98,7 @@ function categorySelected(name) {
 console.log(`${name} clicked`);
 }
 return (
+
 <header>
 <h2>
 <a href="/">
@@ -139,6 +140,7 @@ import About from "./components/About";
 
 function App() {
 return (
+
 <div>
 <Nav></Nav>
 <main>
@@ -149,3 +151,30 @@ return (
 }
 
 export default App;
+
+# 20.2.4
+
+We ran our first tests for the About section of the page. Here we created a **test** file in the About directory that holds the index.test.js. In this file we added this.
+
+import React from "react";
+import { render, cleanup } from "@testing-library/react";
+import "@testing-library/jest-dom/extend-expect";
+import About from "..";
+
+afterEach(cleanup);
+
+describe("About component", () => {
+// First Test
+it("renders", () => {
+render(<About />);
+});
+
+// Second Test
+it("matches snapshot DOM node structure", () => {
+// render About
+const { asFragment } = render(<About />);
+expect(asFragment()).toMatchSnapshot();
+});
+});
+
+This runs a test and does something I have never seen before called creating a snap shot. This essentially made a copy of our HTML and then asked it to compare the two to see if they match. They also mentioned that if you update things the snapshot could become stale. If that happens when the tests run simply select "w" from the jest options in the terminal and then select "u" to update the snap shot. Once it has done that it will run the test again.
