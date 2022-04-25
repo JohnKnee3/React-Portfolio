@@ -75,3 +75,77 @@ alt="cover"
 export default About;
 
 # 20.1.6
+
+We created the Nav component. First we made the Nav file and placed a new index.js inside of it. When it was all said and done we hardcoded some basic html and then went nuts mapping over the categories object and handeling an onclick event. The end result was this.
+
+import React from "react";
+
+function Nav() {
+const categories = [
+{
+name: "commercial",
+description:
+"Photos of grocery stores, food trucks, and other commercial projects",
+},
+{ name: "portraits", description: "Portraits of people in my life" },
+{ name: "food", description: "Delicious delicacies" },
+{
+name: "landscape",
+description: "Fields, farmhouses, waterfalls, and the beauty of nature",
+},
+];
+function categorySelected(name) {
+console.log(`${name} clicked`);
+}
+return (
+<header>
+<h2>
+<a href="/">
+<span role="img" aria-label="camera">
+{" "}
+📸
+</span>{" "}
+Oh Snap!
+</a>
+</h2>
+<nav>
+<ul className="flex-row">
+<li className="mx-2">
+<a href="#about">About me</a>
+</li>
+<li>
+<span>Contact</span>
+</li>
+{categories.map((category) => (
+<li className="mx-1" key={category.name}>
+<span onClick={() => categorySelected(category.name)}>
+{category.name}
+</span>
+</li>
+))}
+</ul>
+</nav>
+</header>
+);
+}
+
+export default Nav;
+
+Finally we had to go back into the src/App.js and update it to requre this new file like this.
+
+import React from "react";
+import Nav from "./components/Nav";
+import About from "./components/About";
+
+function App() {
+return (
+<div>
+<Nav></Nav>
+<main>
+<About></About>
+</main>
+</div>
+);
+}
+
+export default App;
