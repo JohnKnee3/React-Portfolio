@@ -178,3 +178,28 @@ expect(asFragment()).toMatchSnapshot();
 });
 
 This runs a test and does something I have never seen before called creating a snap shot. This essentially made a copy of our HTML and then asked it to compare the two to see if they match. They also mentioned that if you update things the snapshot could become stale. If that happens when the tests run simply select "w" from the jest options in the terminal and then select "u" to update the snap shot. Once it has done that it will run the test again.
+
+# 20.2.5
+
+Here we created the tests for the Nav. The first test was the exact same as what we did for the abotu section. But then we also tested to see if we could find an emoji like this.
+
+describe("emoji is visible", () => {
+it("inserts emoji into the h2", () => {
+// Arrange
+const { getByLabelText } = render(<Nav />);
+// Assert
+expect(getByLabelText("camera")).toHaveTextContent("📸");
+});
+});
+
+Then after that we tested to see if all the links are visible like this.
+
+describe("links are visible", () => {
+it("inserts text into the links", () => {
+const { getByTestId } = render(<Nav />);
+expect(getByTestId("link")).toHaveTextContent("Oh Snap!");
+expect(getByTestId("about")).toHaveTextContent("About me");
+});
+});
+
+The big thing with this last one is that we had to go into the Nav/index.js and update the links being tested to have a data-testid="link" & data-testid="about". WE added these beacuse these data-testid's will never be used by anything else but running a test. As a result if someone updates the class or id link later to style the page we will be uneffected.
