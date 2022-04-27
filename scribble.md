@@ -203,3 +203,64 @@ expect(getByTestId("about")).toHaveTextContent("About me");
 });
 
 The big thing with this last one is that we had to go into the Nav/index.js and update the links being tested to have a data-testid="link" & data-testid="about". WE added these beacuse these data-testid's will never be used by anything else but running a test. As a result if someone updates the class or id link later to style the page we will be uneffected.
+
+# 20.3
+
+A fairly confusing a buggy module that I needed help to get working. May have to come back to it but in general it simply set up the gallery page.
+
+# 20.4.3
+
+Everything is working fine here so far. We created the Contact component like this
+
+import React from "react";
+
+function ContactForm() {
+// JSX
+return (
+
+<section>
+<h1>Contact me</h1>
+<form id="contact-form">
+<div>
+<label htmlFor="name">Name:</label>
+<input type="text" name="name" />
+</div>
+<div>
+<label htmlFor="email">Email address:</label>
+<input type="email" name="email" />
+</div>
+<div>
+<label htmlFor="message">Message:</label>
+<textarea name="message" rows="5" />
+</div>
+<button type="submit">Submit</button>
+</form>
+</section>
+);
+}
+
+export default ContactForm;
+
+Then we went into App.js and set up the file to import contact like this.
+
+import ContactForm from "./components/Contact";
+
+The interesteting bit here is that the inmort is the same name as what we exported "ContactForm" and the file path still looks for "Contact". None of this is to shocking this just happens to be the first time we did this so they tried to juke us when it came time to set up the App.js. Finally we simply added the contact for into the <main> part of the body. This looks silly right now but they claim we will be learning how to hide it soon. The return statment looks like this.
+
+return (
+
+<div>
+<Nav
+        categories={categories}
+        setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}
+      ></Nav>
+<main>
+<ContactForm></ContactForm>
+<Gallery currentCategory={currentCategory}></Gallery>
+<About></About>
+</main>
+</div>
+);
+
+Also the form is already throwing an error if you do now input the email address correctly. As of right now the only way to trigger it is by hitting the submit button.
