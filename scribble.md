@@ -448,3 +448,7 @@ setContactSelected(false);
 );
 
 Here we made setContactSelected when each nav bar thing has been clicked. If contact is clicked we set to to true. Everywhere else we put false. Then added contactSelected to the Navbar to the navActive will display as intended. This was a pretty important page and I may need to reference it later to make sure I understand all of the ideas brought up here sink in.
+
+# 20.4.7
+
+Ran the tests for the new code put in. I ran into an issue where I had to go back into the Contact/index.js file and add data-testid="h1tag" & data-testid="button". These weren't showing up in the snapshot because they were never there.
