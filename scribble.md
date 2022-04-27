@@ -264,3 +264,63 @@ return (
 );
 
 Also the form is already throwing an error if you do now input the email address correctly. As of right now the only way to trigger it is by hitting the submit button.
+
+# 20.4.4
+
+So far so smooth. This time we learned how to log the information from the two input forms and the textarea. First we created the useState and destructured it like this.
+
+const [formState, setFormState] = useState({
+name: "",
+email: "",
+message: "",
+});
+const { name, email, message } = formState;
+
+Then we created a function named handleFormState that will listen everytime we listen to these spots. Like this.
+
+function handleChange(e) {
+setFormState({ ...formState, [e.target.name]: e.target.value });
+}
+
+Next we went down to the forms to require it which looked like this.
+
+  <div>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            defaultValue={name}
+            onChange={handleChange}
+            name="name"
+          />
+        </div>
+        <div>
+          <label htmlFor="email">Email address:</label>
+          <input
+            type="email"
+            defaultValue={email}
+            name="email"
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <label htmlFor="message">Message:</label>
+          <textarea
+            name="message"
+            defaultValue={message}
+            onChange={handleChange}
+            rows="5"
+          />
+    </div>
+
+Here we are calling this functions so that each time some adds a single character to the forms it will remeber them. Finally we added a submit function called handleSubmit that looks like this.
+
+function handleSubmit(e) {
+e.preventDefault();
+console.log("I am formstate", formState);
+}
+
+And called it down below at the top of the <form> like this.
+
+<form id="contact-form" onSubmit={handleSubmit}>
+
+This will log all three areas that get information once you hit the submit button.
