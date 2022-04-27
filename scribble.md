@@ -324,3 +324,127 @@ And called it down below at the top of the <form> like this.
 <form id="contact-form" onSubmit={handleSubmit}>
 
 This will log all three areas that get information once you hit the submit button.
+
+# 20.4.5
+
+We brought in the validateEmail function from the herlpers.js like this.
+
+import { validateEmail } from '../../utils/helpers';
+
+Then we set up the useState for the error message and then console logged it a few times to test in within the handleChange function like this.
+
+const [errorMessage, setErrorMessage] = useState("");
+const { name, email, message } = formState;
+
+function handleChange(e) {
+if (e.target.name === "email") {
+const isValid = validateEmail(e.target.value);
+
+      console.log(isValid);
+      // isValid conditional statement
+      if (!isValid) {
+        setErrorMessage("Your email is invalid.");
+      } else {
+        if (!e.target.value.length) {
+          setErrorMessage(`${e.target.name} is required.`);
+        } else {
+          setErrorMessage("");
+        }
+      }
+    }
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log("email is", e.target.value);
+    }
+
+}
+
+This mostly made since. The only weird thing is that there is a 1 round delay on when it shows the false statment stops console.loging the success. I'm not clear as to why this happens but I hope it gets addressed soon.
+
+# 20.4.6
+
+We made our first Conditional Render. First we went to the App.js and made sure to require useState. Then we made a const that built a contactSelected hook and set it to false like this.
+
+const [contactSelected, setContactSelected] = useState(false);
+
+Then we tweaked the body to do a react style if statement that will show the <About> & <Gallery> if contactSelected is False, otherwise show only <ContactForm> like this.
+
+return (
+
+<div>
+<Nav
+        categories={categories}
+        setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Nav>
+<main>
+{!contactSelected ? (
+<>
+<Gallery currentCategory={currentCategory}></Gallery>
+<About></About>
+</>
+) : (
+<ContactForm></ContactForm>
+)}
+</main>
+</div>
+);
+
+Finally we slid into Nav/index.js and brought in the two new variables up top like this.
+
+const {
+categories = [],
+setCurrentCategory,
+currentCategory,
+contactSelected,
+setContactSelected,
+} = props;
+
+Then we went down and used them like this
+
+return (
+
+<header className="flex-row px-1">
+<h2>
+<a data-testid="link" href="/">
+<span role="img" aria-label="camera">
+{" "}
+📸
+</span>{" "}
+Oh Snap!
+</a>
+</h2>
+<nav>
+<ul className="flex-row">
+<li className="mx-2">
+<a
+data-testid="about"
+href="#about"
+onClick={() => setContactSelected(false)} >
+About me
+</a>
+</li>
+<li className={`mx-2 ${contactSelected && "navActive"}`}>
+<span onClick={() => setContactSelected(true)}>Contact</span>
+</li>
+{categories.map((category) => (
+<li
+className={`mx-1 ${ currentCategory.name === category.name && !contactSelected && `navActive` }`}
+key={category.name} >
+<span
+onClick={() => {
+setCurrentCategory(category);
+setContactSelected(false);
+}} >
+{capitalizeFirstLetter(category.name)}
+</span>
+</li>
+))}
+</ul>
+</nav>
+</header>
+);
+
+Here we made setContactSelected when each nav bar thing has been clicked. If contact is clicked we set to to true. Everywhere else we put false. Then added contactSelected to the Navbar to the navActive will display as intended. This was a pretty important page and I may need to reference it later to make sure I understand all of the ideas brought up here sink in.
