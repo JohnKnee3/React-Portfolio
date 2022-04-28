@@ -452,3 +452,53 @@ Here we made setContactSelected when each nav bar thing has been clicked. If con
 # 20.4.7
 
 Ran the tests for the new code put in. I ran into an issue where I had to go back into the Contact/index.js file and add data-testid="h1tag" & data-testid="button". These weren't showing up in the snapshot because they were never there.
+
+# 20.5.3
+
+We creatd the Modal component that looks like this.
+
+import React from "react";
+
+function Modal() {
+return (
+
+<div className="modalBackdrop">
+<div className="modalContainer">
+<h3 className="modalTitle">Photo Name</h3>
+<img alt="current category" />
+<p>Photo Description</p>
+<button type="button">Close this modal</button>
+</div>
+</div>
+);
+}
+
+export default Modal;
+
+As of right now evertything is hardcoded. Then we went into the PhotoList component and required the Modal up top. Once we did that we then added the <Modal/> under the first dive like this. It's also worth noting that they broke things on src for line 485 as it is .default after the require().
+
+return (
+
+<div>
+<Modal />
+<div className="flex-row">
+{currentPhotos.map((image, i) => (
+<img
+src={require(`../../assets/small/${category}/${i}.jpg`)}
+alt={image.name}
+className="img-thumbnail mx-1"
+onClick={() => toggleModal(image, i)}
+key={image.name}
+/>
+))}
+</div>
+</div>
+);
+
+This made the Modal appear on the page. Also above we added the onClick and called a function that we haven't made yet passing in the selected "image" element from the photo's array and rendering with "i". Finally we whipped up a quick function with the same name to remove the error like this.
+
+const toggleModal = (image, i) => {
+// current photo
+};
+
+# 20.5.4
