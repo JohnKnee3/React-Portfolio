@@ -502,3 +502,50 @@ const toggleModal = (image, i) => {
 };
 
 # 20.5.4
+
+Here we brought in several things to make the modal image appear when clicked. First we brought in the setCurrentPhoto and the setIsModalOpen like this.
+
+const [isModalOpen, setIsModalOpen] = useState(false);
+const [currentPhoto, setCurrentPhoto] = useState();
+
+Then we used it them both in the toggleModal() like this.
+
+const toggleModal = (image, i) => {
+console.log("I am image", image);
+// current photo
+setCurrentPhoto({ ...image, index: i });
+setIsModalOpen(true);
+};
+
+Next we go into the return statement for PhotoList and update the Modal to show this.
+
+  <Modal currentPhoto={currentPhoto} />
+
+This will pass the currentPhoto into the Modal component. Next we went into the modal component and destructerd (props) into ({currentPhoto}) and then destructured that one more time and updated the return statement to remove the harcoding and insert the passed in data like this.
+
+function Modal({ currentPhoto }) {
+const { name, category, description, index } = currentPhoto;
+
+return (
+
+<div className="modalBackdrop">
+<div className="modalContainer">
+<h3 className="modalTitle">{name}</h3>
+<img
+src={require(`../../assets/large/${category}/${index}.jpg`).default}
+alt="current category"
+/>
+<p>{description}</p>
+<button type="button">Close this modal</button>
+</div>
+</div>
+);
+}
+
+Finally we run into an error because the modal is trying to render as soon as the page loads yet we set everything up for it to only get it's info when we click an image. Lastly we had to add the setIsModalOpen(true) to the toggleModal() and set it to true so it will display. Then we go into the <Modal/> and wrap in in {} so we can say if true show Modal like this.
+
+{isModalOpen && <Modal currentPhoto={currentPhoto} />}
+
+Lastly yet again the image broke becuase they forgot to add the .default. This time it was in the Modal component when it was trying to display the image.
+
+# 20.5.5
