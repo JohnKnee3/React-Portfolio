@@ -549,3 +549,34 @@ Finally we run into an error because the modal is trying to render as soon as th
 Lastly yet again the image broke becuase they forgot to add the .default. This time it was in the Modal component when it was trying to display the image.
 
 # 20.5.5
+
+We made the Modal close by adding the (!isModalOpen) which changes the value from true to false everytime it gets selected. The first time we select it is when we click on a picture and it changes the vlaue from it's default state of false to true. Then we trigger it one last time when we click close modal which changed it from it's current state of true back to false. We passed in onClose to the Modal from the PhotoList like this.
+
+{isModalOpen && (
+<Modal currentPhoto={currentPhoto} onClose={toggleModal} />
+)}
+
+Then we destructured it from the props in the Modal and added it to the <button> like this.
+
+const Modal = ({ onClose, currentPhoto }) => {
+const { name, category, description, index } = currentPhoto;
+
+return (
+
+<div className="modalBackdrop">
+<div className="modalContainer">
+<h3 className="modalTitle">{name}</h3>
+<img
+src={require(`../../assets/large/${category}/${index}.jpg`).default}
+alt="current category"
+/>
+<p>{description}</p>
+<button onClick={onClose} type="button">
+Close this modal
+</button>
+</div>
+</div>
+);
+};
+
+# 20.5.6
