@@ -40,6 +40,7 @@ function Project() {
       <ul>
         {projects.map((work, index) => (
           <li key={index}>
+            <img src={require(`../../images/commercial/${index}.jpg`)} />
             Name: {work.name}
             <p>description: {work.description}</p>{" "}
           </li>
