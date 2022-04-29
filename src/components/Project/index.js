@@ -6,43 +6,43 @@ function Project() {
   const [projects] = useState([
     {
       name: "Copy Cat Games",
-
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      linkPage: "https://morning-spire-87893.herokuapp.com/",
+      // linkGit: "https://github.com/JohnKnee3/Copy-Cat-Games",
+      description: "A silly little site for a fictional board game company.",
     },
-    {
-      name: "Grocery booth",
+    // {
+    //   name: "Grocery booth",
 
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Building exterior",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    // },
+    // {
+    //   name: "Building exterior",
 
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Restaurant table",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    // },
+    // {
+    //   name: "Restaurant table",
 
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Cafe interior",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    // },
+    // {
+    //   name: "Cafe interior",
 
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+    // },
   ]);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const toggleModal = (image, i) => {
-    console.log("I am image", image);
+  const toggleModal = (project, i) => {
+    console.log("I am image", project);
 
     // current photo
-    setCurrentPhoto({ ...image, index: i });
+    setCurrentPhoto({ ...project, index: i });
 
     setIsModalOpen(!isModalOpen);
   };
