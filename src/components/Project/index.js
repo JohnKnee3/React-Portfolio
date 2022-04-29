@@ -23,18 +23,25 @@ function Project() {
       description:
         "Track your budget while in on or offline.  Can convert to a PWA as well.",
     },
-    // {
-    //   name: "Restaurant table",
-
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    // },
-    // {
-    //   name: "Cafe interior",
-
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    // },
+    {
+      name: "Yet Another Tech Blog",
+      linkPage: "https://damp-temple-43763.herokuapp.com/",
+      linkGit: "https://github.com/JohnKnee3/Yet-Another-Tech-Blog",
+      description:
+        "A site where tech lovers can chat about all the love they love.",
+    },
+    {
+      name: "Weather Dashboard",
+      linkPage: "https://johnknee3.github.io/Weather-Dashboard/",
+      linkGit: "https://github.com/JohnKnee3/Weather-Dashboard",
+      description: "A site where you can track the weather by city name.",
+    },
+    {
+      name: "Note Taker",
+      linkPage: "https://arcane-beyond-71149.herokuapp.com/",
+      linkGit: "https://github.com/JohnKnee3/Note-Taker",
+      description: "A handy-dandy little note taking site.",
+    },
   ]);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
