@@ -2,9 +2,28 @@ import React from "react";
 
 function Resume() {
   return (
-    <div>
-      <p>I worked at places</p>
-      <img src="https://img.icons8.com/ios/50/000000/edgar-allan-poe.png" />
+    <div class="resume-container">
+      <img src="https://img.icons8.com/cute-clipart/64/000000/pdf.png" />
+      <p>Resume</p>
+      <h2 class="resume">font-end technologies</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>React.js</li>
+        <li>Framework (Bootstrap, Materalize)</li>
+        <li>Responsive Web Design</li>
+        <li>Templating language (Handlebars)</li>
+      </ul>
+      <h2 class="resume">back-end technologies</h2>
+      <ul>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>MySQL (mysql, sequelize)</li>
+        <li>NoSQL (MongoDB, Mongoose)</li>
+        <li>API's (web, third-party, RESTful, server-side)</li>
+      </ul>
     </div>
   );
 }
