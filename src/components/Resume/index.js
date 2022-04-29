@@ -1,9 +1,11 @@
 import React from "react";
-
+import MyResume from "../../assets/resumes/john-clark.jpg";
 function Resume() {
   return (
     <div class="resume-container">
-      <img src="https://img.icons8.com/cute-clipart/64/000000/pdf.png" />
+      <a href={MyResume} download>
+        <img src="https://img.icons8.com/cute-clipart/64/000000/pdf.png" />
+      </a>
       <p>Resume</p>
       <h2 class="resume">font-end technologies</h2>
       <ul>
