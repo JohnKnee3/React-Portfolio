@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Nav from "../Nav";
 import About from "../About";
 import Project from "../Project";
+import Contact from "../Contact";
 
 function Header() {
   const [currentPage, setCurrentPage] = useState("About");
@@ -14,10 +15,10 @@ function Header() {
       return <Project />;
     }
 
-    // if (currentPage === "Blog") {
-    //   return <Blog />;
-    // }
-    // return <Contact />;
+    if (currentPage === "Contact") {
+      return <Contact />;
+    }
+    // return <Resume />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
