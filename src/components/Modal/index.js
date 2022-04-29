@@ -7,7 +7,9 @@ const Modal = ({ onClose, currentProject }) => {
   return (
     <div className="modalBackdrop">
       <div className="modalContainer">
-        <h3 className="modalTitle">{name}</h3>
+        <div>
+          <h3 className="modalTitle">{name}</h3>
+        </div>
         <img
           src={require(`../../assets/images/websites/big/${index}.jpg`)}
           alt="current display"
@@ -15,14 +17,15 @@ const Modal = ({ onClose, currentProject }) => {
 
         <p className="modalText">{description}</p>
         <a href={linkPage} target="_blank">
-          <button>Official Website</button>
+          <img src="https://img.icons8.com/clouds/100/000000/domain.png" />
         </a>
+
         <a href={linkGit} target="_blank">
-          <button>GitHub Page</button>
+          <img src="https://img.icons8.com/plasticine/100/000000/github.png" />
         </a>
-        <button onClick={onClose} type="button">
-          Close
-        </button>
+        <a onClick={onClose} type="button">
+          <img src="https://img.icons8.com/flat-round/64/000000/delete-sign.png" />
+        </a>
       </div>
     </div>
   );
