@@ -66,7 +66,7 @@ function Project() {
           {projects.map((project, index) => (
             <div key={index}>
               <img
-                src={require(`../../images/websites/tiny/${index}.jpg`)}
+                src={require(`../../assets/images/websites/tiny/${index}.jpg`)}
                 alt={project.name}
                 onClick={() => toggleModal(project, index)}
                 key={project.name}
