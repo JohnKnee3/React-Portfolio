@@ -1,8 +1,5 @@
 import React from "react";
 
-// TODO: Add a comment explaining how we are able to extract the key value pairs from props
-// We just passed them in from the NavTabs and are using {} to desrtucture it.
-
 function Nav({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs">
@@ -10,31 +7,27 @@ function Nav({ currentPage, handlePageChange }) {
         <a
           href="#about"
           onClick={() => handlePageChange("About")}
-          //  TODO: Add a comment explaining what this logic is doing
-
           className={currentPage === "About" ? "nav-link active" : "nav-link"}
         >
           About
         </a>
       </li>
-      {/* <li className="nav-item">
+      <li className="nav-item">
         <a
-          href="#home"
-          onClick={() => handlePageChange("Home")}
+          href="#project"
+          onClick={() => handlePageChange("Project")}
           //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
 
-          className={currentPage === "Home" ? "nav-link active" : "nav-link"}
+          className={currentPage === "Project" ? "nav-link active" : "nav-link"}
         >
-          Home
+          Project
         </a>
       </li>
 
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <a
           href="#blog"
           onClick={() => handlePageChange("Blog")}
-          //  TODO: Add a comment explaining what this logic is doing
-
           className={currentPage === "Blog" ? "nav-link active" : "nav-link"}
         >
           Blog
@@ -43,8 +36,6 @@ function Nav({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#contact"
-          //  TODO: Add a comment explaining what this logic is doing
-
           onClick={() => handlePageChange("Contact")}
           className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
         >
