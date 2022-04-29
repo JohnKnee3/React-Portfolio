@@ -28,6 +28,7 @@ function Header() {
     <div>
       <h1>John Clark</h1>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+
       {renderPage()}
     </div>
   );
