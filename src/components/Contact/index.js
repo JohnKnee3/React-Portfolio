@@ -15,8 +15,8 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
-      setFormState({ [e.target.name]: e.target.value });
-      console.log("Form", e);
+      // setFormState({ [e.target.name]: e.target.value });
+      console.log("Form", formState);
     }
   };
 
@@ -34,6 +34,10 @@ function Contact() {
       } else {
         setErrorMessage("");
       }
+    }
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log("Handle Form", formState);
     }
   };
 
