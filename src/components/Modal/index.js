@@ -1,7 +1,8 @@
 import React from "react";
 
-const Modal = ({ onClose, currentPhoto }) => {
-  const { name, description, index } = currentPhoto;
+const Modal = ({ onClose, currentProject }) => {
+  console.log(currentProject);
+  const { name, description, linkPage, linkGit, index } = currentProject;
 
   return (
     <div className="modalBackdrop">
@@ -13,15 +14,14 @@ const Modal = ({ onClose, currentPhoto }) => {
         />
 
         <p className="modalText">{description}</p>
-        <a
-          href="https://morning-spire-87893.herokuapp.com/"
-          target="_blank"
-          className="modalText"
-        >
-          GitHub
+        <a href={linkPage} target="_blank">
+          <button>Official Website</button>
+        </a>
+        <a href={linkGit} target="_blank">
+          <button>GitHub Page</button>
         </a>
         <button onClick={onClose} type="button">
-          Close this modal
+          Close
         </button>
       </div>
     </div>
