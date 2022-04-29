@@ -17,14 +17,23 @@ const Modal = ({ onClose, currentProject }) => {
 
         <p className="modalText">{description}</p>
         <a href={linkPage} target="_blank">
-          <img src="https://img.icons8.com/clouds/100/000000/domain.png" />
+          <img
+            src="https://img.icons8.com/clouds/100/000000/domain.png"
+            alt="website icon"
+          />
         </a>
 
         <a href={linkGit} target="_blank">
-          <img src="https://img.icons8.com/plasticine/100/000000/github.png" />
+          <img
+            src="https://img.icons8.com/plasticine/100/000000/github.png"
+            alt="gitHub icon"
+          />
         </a>
         <a onClick={onClose} type="button">
-          <img src="https://img.icons8.com/flat-round/64/000000/delete-sign.png" />
+          <img
+            src="https://img.icons8.com/flat-round/64/000000/delete-sign.png"
+            alt="close page icon"
+          />
         </a>
       </div>
     </div>
