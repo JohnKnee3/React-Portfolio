@@ -364,6 +364,9 @@ a {
   background-color: var(--blueish);
   color: var(--light);
 }
+.leia-made-me {
+  margin-left: 18px;
+}
 
 .nav-link {
   color: #595b75;

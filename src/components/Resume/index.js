@@ -5,7 +5,7 @@ function Resume() {
     <div className="resume-container">
       <div>
         <h2>download resume </h2>
-        <a href={MyResume} download>
+        <a class="leia-made-me" href={MyResume} download>
           <img src="https://img.icons8.com/cute-clipart/64/000000/pdf.png" />
         </a>
       </div>
