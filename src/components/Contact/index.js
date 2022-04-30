@@ -77,9 +77,9 @@ function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <a data-testid="button" type="submit">
-          <img src="https://img.icons8.com/plasticine/90/000000/ok.png" />
-        </a>
+        <button data-testid="button" type="submit">
+          Submit
+        </button>
       </form>
     </section>
   );

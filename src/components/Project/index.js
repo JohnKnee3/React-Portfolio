@@ -64,9 +64,10 @@ function Project() {
         <h1>Projects</h1>
         <ul>
           {projects.map((project, index) => (
-            <div key={index}>
+            <div className="project-hover" key={index}>
               <img
                 src={require(`../../assets/images/websites/tiny/${index}.jpg`)}
+                className="img-thumbnail-project mx-1"
                 alt={project.name}
                 onClick={() => toggleModal(project, index)}
                 key={project.name}

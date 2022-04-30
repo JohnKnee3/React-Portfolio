@@ -26,9 +26,10 @@ function Header() {
 
   return (
     <div>
-      <h1>John Clark's Portfolio</h1>
-      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-
+      <div className="header-container">
+        <h1 className="my-name">John Clark's Portfolio</h1>
+        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+      </div>
       {renderPage()}
     </div>
   );
