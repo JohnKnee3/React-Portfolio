@@ -19,7 +19,10 @@ function Footer() {
             alt="linkedIn icon"
           />
         </a>
-        <a href="https://www.indeed.com" target="_blank">
+        <a
+          href="https://my.indeed.com/resume?hl=en&co=US&from=gnav-homepage"
+          target="_blank"
+        >
           <img
             src="https://img.icons8.com/windows/100/42648A/indeed.png"
             alt="linkedIn icon"
