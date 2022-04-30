@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.f14f9835.css",
+    "main.js": "/react-portfolio/static/js/main.e9c8027f.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/0.jpg": "/react-portfolio/static/media/0.cf860457abd18956622c.jpg",
+    "static/media/turkey.jpg": "/react-portfolio/static/media/turkey.9805dce51603e8233cb8.jpg",
+    "static/media/3.jpg": "/react-portfolio/static/media/3.b47f0e5fda0f01662b5e.jpg",
+    "static/media/1.jpg": "/react-portfolio/static/media/1.29516b7941988935ff3c.jpg",
+    "static/media/4.jpg": "/react-portfolio/static/media/4.76185b5b71783c296f48.jpg",
+    "static/media/John-Clark.pdf": "/react-portfolio/static/media/John-Clark.84fa7df6de39a7f1fcd3.pdf",
+    "static/media/2.jpg": "/react-portfolio/static/media/2.fde2e9a36d35974e9b44.jpg",
+    "static/media/5.jpg": "/react-portfolio/static/media/5.5d926e6d017401c77481.jpg",
+    "index.html": "/react-portfolio/index.html",
+    "main.f14f9835.css.map": "/react-portfolio/static/css/main.f14f9835.css.map",
+    "main.e9c8027f.js.map": "/react-portfolio/static/js/main.e9c8027f.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f14f9835.css",
+    "static/js/main.e9c8027f.js"
+  ]
+}
