@@ -60,11 +60,12 @@ function Project() {
       {isModalOpen && (
         <Modal currentProject={currentProject} onClose={toggleModal} />
       )}
-      <div className="flex-row">
-        <h1>Projects</h1>
+      <div>
+        <h1 className="my-name">Projects</h1>
         <ul>
           {projects.map((project, index) => (
-            <div className="project-hover" key={index}>
+            <div className="project-container" key={index}>
+              {/* <p>{project.name}</p> */}
               <img
                 src={require(`../../assets/images/websites/tiny/${index}.jpg`)}
                 className="img-thumbnail-project mx-1"
@@ -72,7 +73,6 @@ function Project() {
                 onClick={() => toggleModal(project, index)}
                 key={project.name}
               />
-              <p>{project.name}</p>
             </div>
           ))}
         </ul>
