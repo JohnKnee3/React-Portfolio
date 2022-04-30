@@ -20,7 +20,7 @@ function Nav({ currentPage, handlePageChange }) {
 
           className={currentPage === "Project" ? "nav-link active" : "nav-link"}
         >
-          Project
+          Projects
         </a>
       </li>
       <li className="nav-item">

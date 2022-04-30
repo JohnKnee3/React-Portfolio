@@ -80,7 +80,7 @@ function Project() {
             {/* <p>{project.name}</p> */}
             <img
               src={require(`../../assets/images/websites/tiny/${index}.jpg`)}
-              className="img-thumbnail-project mx-1"
+              className="img-thumbnail-project "
               alt={project.name}
               onClick={() => toggleModal(project, index)}
               key={project.name}

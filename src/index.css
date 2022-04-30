@@ -32,7 +32,7 @@ body {
   font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
-  letter-spacing: 0.1em;
+  /* letter-spacing: 0.1em; */
   background: var(--blueish);
   color: var(--primary);
   /* font-family: "Poiret One", cursive; */
@@ -302,7 +302,7 @@ textarea {
 }
 
 button {
-  background: var(--blueish);
+  color: #77dfff;
   border: 0;
   border-radius: 5px;
   color: #fff;
@@ -323,8 +323,8 @@ a {
 }
 
 .about-me {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .talk-about-me {
@@ -337,6 +337,10 @@ a {
 
 .header-container {
   background-color: var(--secondary);
+}
+
+.contact-page {
+  padding-left: 10px;
 }
 
 .my-name {
@@ -380,4 +384,9 @@ a {
 .content {
   max-width: 1050px;
   margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 350px;
 }
