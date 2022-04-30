@@ -30,7 +30,7 @@ function Header() {
         <h1 className="my-name">John Clark's Portfolio</h1>
         <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       </div>
-      {renderPage()}
+      <div>{renderPage()}</div>
     </div>
   );
 }

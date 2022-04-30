@@ -350,3 +350,8 @@ a {
   background-color: var(--secondary);
   margin-top: 25vh;
 }
+
+.content {
+  max-width: 1050px;
+  margin: 0 auto;
+}
