@@ -12,7 +12,7 @@ This is a reworking of the original portfolio page we made early on in class. Th
 
 ## Usage
 
-To use this page simply click on the <a href="https://stark-badlands-41125.herokuapp.com/">GitPages link here</a>.
+To use this page simply click on the <a href="https://johnknee3.github.io/React-Portfolio/">GitPages link here</a>.
 
 ## Questions
 
