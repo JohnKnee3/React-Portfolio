@@ -73,7 +73,7 @@ function Project() {
         <Modal currentProject={currentProject} onClose={toggleModal} />
       )}
       <div>
-        <h1 className="my-name">Projects</h1>
+        <h1 className="my-name">My Projects</h1>
 
         {projects.map((project, index) => (
           <div className="project-container" key={index}>
