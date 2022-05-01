@@ -25,7 +25,7 @@ function Project() {
       linkPage: "https://stark-badlands-41125.herokuapp.com/",
       linkGit: "https://github.com/JohnKnee3/Track-My-Budget",
       description:
-        "Track your budget while in on or offline.  Can convert to a PWA as well.",
+        "Track your budget while on or offline.  Can convert to a PWA as well.",
       tech: "IndexDB/Service Workers/",
       tech2: "Web Manifest",
     },
@@ -85,8 +85,9 @@ function Project() {
               onClick={() => toggleModal(project, index)}
               key={project.name}
             />
+
             <div
-              className="centered "
+              className="project-text"
               onClick={() => toggleModal(project, index)}
             >
               <h2 className="project-title">{project.name}</h2>

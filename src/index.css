@@ -258,7 +258,7 @@ textarea {
 .project-container:hover {
   transform: scale(1.02);
 }
-.centered {
+.project-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -266,7 +266,7 @@ textarea {
   color: white;
 }
 
-.centered:hover {
+.project-text:hover {
   cursor: pointer;
 }
 
@@ -299,6 +299,7 @@ textarea {
 
 .modalText {
   color: #fff;
+  margin-bottom: 0;
 }
 
 button {
@@ -367,6 +368,9 @@ a {
 .leia-made-me {
   margin-left: 18px;
 }
+.my-real-name {
+  margin-top: 0;
+}
 
 .nav-link {
   color: #595b75;
@@ -391,5 +395,38 @@ a {
 
 input,
 textarea {
-  width: 350px;
+  width: 348px;
+}
+
+@media only screen and (max-width: 1180px) {
+  .img-thumbnail-project {
+    width: 90%;
+  }
+
+  .modalContainer {
+    width: 685px;
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .img-thumbnail-project {
+    width: 90%;
+  }
+  a {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .modalContainer {
+    width: 300px;
+    padding: 0 13px;
+  }
+  .modalTitle {
+    margin-bottom: 0;
+  }
+  .modal-icon-link {
+    width: 25%;
+  }
+  .modal-icon-link-X {
+    width: 49px;
+  }
 }
