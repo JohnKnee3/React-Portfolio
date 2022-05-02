@@ -284,7 +284,7 @@ textarea {
 .modalContainer {
   background: var(--darker);
   border-radius: 5px;
-  max-width: 100%;
+  max-width: 760px;
   margin: 50px auto;
   padding: 15px;
   width: 960px;
