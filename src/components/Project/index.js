@@ -5,6 +5,15 @@ function Project() {
   const [currentProject, setCurrentProject] = useState();
   const [projects] = useState([
     {
+      name: "Blockbuster Video",
+      linkPage: "https://tranquil-caverns-31701.herokuapp.com/",
+      linkGit: "https://github.com/JohnKnee3/Blockbuster-Video",
+      description:
+        "A site of what it would look like if Blockbuster Video came back and got into designer VHS movies.",
+      tech: "React/GraphQL/Node.js/",
+      tech2: "Express.js/Mongo/Mongoose",
+    },
+    {
       name: "Copy Cat Games",
       linkPage: "https://morning-spire-87893.herokuapp.com/",
       linkGit: "https://github.com/JohnKnee3/Copy-Cat-Games",
