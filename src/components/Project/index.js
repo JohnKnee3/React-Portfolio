@@ -10,7 +10,7 @@ function Project() {
       linkGit: "https://github.com/JohnKnee3/Blockbuster-Video",
       description:
         "A site of what it would look like if Blockbuster Video came back and got into designer VHS movies.",
-      tech: "React/GraphQL/Node.js/",
+      tech: "React/GraphQL/Node.js/CSS",
       tech2: "Express.js/Mongo/Mongoose",
     },
     {
@@ -18,7 +18,7 @@ function Project() {
       linkPage: "https://morning-spire-87893.herokuapp.com/",
       linkGit: "https://github.com/JohnKnee3/Copy-Cat-Games",
       description: "A silly little site for a fictional board game company.",
-      tech: "Bootstrap/JavaScript/Node.js/",
+      tech: "Bootstrap/JavaScript/Node.js/CSS",
       tech2: "Express.js/MySQL/Handlebars",
     },
     {
@@ -44,8 +44,8 @@ function Project() {
       linkGit: "https://github.com/JohnKnee3/Yet-Another-Tech-Blog",
       description:
         "A site where tech lovers can chat about all the love they love.",
-      tech: "HTML/CSS/Express/MySQL/",
-      tech2: "JavaScript",
+      tech: "HTML/CSS/Express.js/MySQL/",
+      tech2: "JavaScript/Handlebars",
     },
     {
       name: "Weather Dashboard",
@@ -60,7 +60,7 @@ function Project() {
       linkPage: "https://arcane-beyond-71149.herokuapp.com/",
       linkGit: "https://github.com/JohnKnee3/Note-Taker",
       description: "A handy-dandy little note taking site.",
-      tech: "Node/Express/AJAX/",
+      tech: "Node.js/Express/AJAX/",
       tech2: "jQuery",
     },
   ]);
