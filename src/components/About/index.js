@@ -1,5 +1,6 @@
 import React from "react";
 import turkey from "../../assets/images/turkey.jpg";
+import profile from "../../assets/images/profilePic.png";
 
 function About() {
   return (
@@ -8,28 +9,30 @@ function About() {
         <div>
           <h2 className="my-name">About Me</h2>
           <img
-            src={turkey}
+            src={profile}
             alt="image of a turkey"
             className="img-thumbnail"
             key={"turkey.jpg"}
           />
           <p className="talk-about-me">
-            I am a Turkey, well not exactly. But I once saw a Turkey all fluffed
-            out chasing a bus and I was like "Yeah....I get you. I think I
-            matter sometimes too." It was a beautiful moment reminding me of my
-            importance. <br />
-            <br />
-            But seriously though...
-            <br />
-            <br />I am a well rounded web developer with knowledge of front-end
-            and back-end languages. I have a strong bias for ensuring I deliver
-            a quality product that meet and exceed the requirements. I will be
-            completing a Professional Coding Bootcamp from the University of
-            Utah in May, and have found a passion in this field that I look
-            forward to continuing.
+            Web Developer leveraging a detail-oriented background to bring
+            energy into a new career path. Recently earned a certificate in Full
+            Stack Web Development from the University of Utah Professional
+            Coding Bootcamp, in May of 2022.
+            <br /> <br />I have developed skills in JavaScript, CSS, React.js,
+            and responsive web design through a variety of individual and group
+            projects. Detail oriented with a passion for creating a quality
+            product that exceeds goals and expectations.
             <br />
             <br />
-            Gobble gobble, gobble gobble.
+            With every role and product my aim is to provide a tool that
+            enhances user experience in usability and design. <br />I applied
+            aspects of UX and agile development in a recent project. I worked on
+            a small team to develop a single page MERN app merchandise store
+            with organized categories and forums where customers can discuss
+            products. <br />
+            <br /> I am excited to leverage my skills and deliver results as
+            part of a quality driven team.
           </p>
         </div>
       </section>
