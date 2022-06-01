@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Nav from "../Nav";
-import About from "../About";
-import Project from "../Project";
-import Contact from "../Contact";
-import Resume from "../Resume";
+// import Nav from "../Nav";
+// import About from "../About";
+// import Project from "../Project";
+// import Contact from "../Contact";
+// import Resume from "../Resume";
 
 function Header() {
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("");
 
   // const renderPage = () => {
   //   if (currentPage === "About") {
@@ -34,49 +34,49 @@ function Header() {
           <li className="nav-item">
             <Link
               to="/"
-              OnClick={() => handlePageChange("About")}
-              className={
-                currentPage === "About" ? "nav-link active" : "nav-link"
-              }
+              // href="#about"
+              onClick={() => handlePageChange("")}
+              className={currentPage === "" ? "nav-link active" : "nav-link"}
             >
               About
             </Link>
           </li>
           <li className="nav-item">
-            <a
-              href="#project"
+            <Link
+              to="/Project"
+              // href="#project"
               onClick={() => handlePageChange("Project")}
-              //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-
               className={
                 currentPage === "Project" ? "nav-link active" : "nav-link"
               }
             >
               Projects
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
-              href="#contact"
+            <Link
+              to="Contact"
+              // href="#contact"
               onClick={() => handlePageChange("Contact")}
               className={
                 currentPage === "Contact" ? "nav-link active" : "nav-link"
               }
             >
               Contact
-            </a>
+            </Link>
           </li>
 
           <li className="nav-item">
-            <a
-              href="#resume"
+            <Link
+              to="/Resume"
+              // href="#resume"
               onClick={() => handlePageChange("Resume")}
               className={
                 currentPage === "Resume" ? "nav-link active" : "nav-link"
               }
             >
               Resume
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
