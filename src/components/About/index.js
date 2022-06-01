@@ -1,5 +1,5 @@
 import React from "react";
-import turkey from "../../assets/images/turkey.jpg";
+
 import profile from "../../assets/images/profilePic.png";
 
 function About() {
@@ -10,9 +10,9 @@ function About() {
           <h2 className="my-name">About Me</h2>
           <img
             src={profile}
-            alt="image of a turkey"
+            alt="person smiling"
             className="img-thumbnail"
-            key={"turkey.jpg"}
+            key={"profile.jpg"}
           />
           <p className="talk-about-me">
             Web Developer leveraging a detail-oriented background to bring
