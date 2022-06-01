@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.34802d58.css",
-    "main.js": "/React-Portfolio/static/js/main.b48842b0.js",
+    "main.js": "/React-Portfolio/static/js/main.6bddf836.js",
     "static/js/787.a2cb61a6.chunk.js": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/profilePic.png": "/React-Portfolio/static/media/profilePic.304d9c2e5b09fcb85aa5.png",
     "static/media/0.jpg": "/React-Portfolio/static/media/0.fa4edbce360189e88072.jpg",
     "static/media/1.jpg": "/React-Portfolio/static/media/1.cf860457abd18956622c.jpg",
     "static/media/turkey.jpg": "/React-Portfolio/static/media/turkey.9805dce51603e8233cb8.jpg",
     "static/media/4.jpg": "/React-Portfolio/static/media/4.b47f0e5fda0f01662b5e.jpg",
     "static/media/2.jpg": "/React-Portfolio/static/media/2.29516b7941988935ff3c.jpg",
     "static/media/5.jpg": "/React-Portfolio/static/media/5.76185b5b71783c296f48.jpg",
-    "static/media/John-Clark.pdf": "/React-Portfolio/static/media/John-Clark.84fa7df6de39a7f1fcd3.pdf",
     "static/media/3.jpg": "/React-Portfolio/static/media/3.fde2e9a36d35974e9b44.jpg",
+    "static/media/My-Resume.pdf": "/React-Portfolio/static/media/My-Resume.32b810925292f5b377bb.pdf",
     "static/media/6.jpg": "/React-Portfolio/static/media/6.5d926e6d017401c77481.jpg",
     "index.html": "/React-Portfolio/index.html",
     "main.34802d58.css.map": "/React-Portfolio/static/css/main.34802d58.css.map",
-    "main.b48842b0.js.map": "/React-Portfolio/static/js/main.b48842b0.js.map",
+    "main.6bddf836.js.map": "/React-Portfolio/static/js/main.6bddf836.js.map",
     "787.a2cb61a6.chunk.js.map": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34802d58.css",
-    "static/js/main.b48842b0.js"
+    "static/js/main.6bddf836.js"
   ]
 }
