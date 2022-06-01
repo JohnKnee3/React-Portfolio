@@ -1,12 +1,15 @@
 import React from "react";
-import MyResume from "../../assets/resumes/John-Clark.pdf";
+import MyResume from "../../assets/resumes/My-Resume.pdf";
 function Resume() {
   return (
     <div className="resume-container">
       <div>
         <h2>download resume </h2>
         <a class="leia-made-me" href={MyResume} download>
-          <img src="https://img.icons8.com/cute-clipart/64/000000/pdf.png" />
+          <img
+            src="https://img.icons8.com/cute-clipart/64/000000/pdf.png"
+            alt="pdf icon"
+          />
         </a>
       </div>
       <h2 className="resume">font-end technologies</h2>
