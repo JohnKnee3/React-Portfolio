@@ -43,7 +43,9 @@ function Contact() {
 
   return (
     <section className="contact-page">
-      <h1 data-testid="h1tag">Contact me</h1>
+      <h1 data-testid="h1tag" className="my-name">
+        Contact me
+      </h1>
       {/* <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -84,14 +86,15 @@ function Contact() {
           Submit
         </button>
       </form> */}
-
-      <a className="leia-made-me" href="mailto:john.a.clark3@gmail.com">
-        <img
-          src="https://img.icons8.com/clouds/100/undefined/new-post.png"
-          alt="mail-logo"
-        />
-      </a>
-      <p>john.a.clark3@gmail.com</p>
+      <div className="project-container">
+        <a href="mailto:john.a.clark3@gmail.com">
+          <img
+            src="https://img.icons8.com/clouds/100/undefined/new-post.png"
+            alt="mail-logo"
+          />
+        </a>
+        <p>john.a.clark3@gmail.com</p>
+      </div>
     </section>
   );
 }
