@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // import Nav from "../Nav";
 // import About from "../About";
 // import Project from "../Project";
@@ -7,8 +7,12 @@ import { Link } from "react-router-dom";
 // import Resume from "../Resume";
 
 function Header() {
-  let nowPage = "React-Portfolio";
+  // let nowPage = "/React-Portfolio";
+  const url = useLocation();
+  const nowPage = url.pathname;
   const [currentPage, setCurrentPage] = useState(nowPage);
+
+  // console.log("I am {pathname", { pathname });
 
   // const renderPage = () => {
   //   if (currentPage === "About") {
@@ -36,9 +40,9 @@ function Header() {
             <Link
               to="/React-Portfolio"
               // href="#about"
-              onClick={() => handlePageChange("React-Portfolio")}
+              onClick={() => handlePageChange("/React-Portfolio")}
               className={
-                currentPage === "React-Portfolio"
+                currentPage === "/React-Portfolio"
                   ? "nav-link active"
                   : "nav-link"
               }
@@ -50,9 +54,11 @@ function Header() {
             <Link
               to="/React-Portfolio/Project"
               // href="#project"
-              onClick={() => handlePageChange("Project")}
+              onClick={() => handlePageChange("/React-Portfolio/Project")}
               className={
-                currentPage === "Project" ? "nav-link active" : "nav-link"
+                currentPage === "/React-Portfolio/Project"
+                  ? "nav-link active"
+                  : "nav-link"
               }
             >
               Projects
@@ -62,9 +68,11 @@ function Header() {
             <Link
               to="/React-Portfolio/Contact"
               // href="#contact"
-              onClick={() => handlePageChange("Contact")}
+              onClick={() => handlePageChange("/React-Portfolio/Contact")}
               className={
-                currentPage === "Contact" ? "nav-link active" : "nav-link"
+                currentPage === "/React-Portfolio/Contact"
+                  ? "nav-link active"
+                  : "nav-link"
               }
             >
               Contact
@@ -75,9 +83,11 @@ function Header() {
             <Link
               to="/React-Portfolio/Resume"
               // href="#resume"
-              onClick={() => handlePageChange("Resume")}
+              onClick={() => handlePageChange("/React-Portfolio/Resume")}
               className={
-                currentPage === "Resume" ? "nav-link active" : "nav-link"
+                currentPage === "/React-Portfolio/Resume"
+                  ? "nav-link active"
+                  : "nav-link"
               }
             >
               Resume
