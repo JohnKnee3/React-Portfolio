@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.00d5aba3.css",
-    "main.js": "/React-Portfolio/static/js/main.ed6b6e2b.js",
-    "static/js/787.a2cb61a6.chunk.js": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/profilePic.png": "/React-Portfolio/static/media/profilePic.304d9c2e5b09fcb85aa5.png",
-    "static/media/0.jpg": "/React-Portfolio/static/media/0.fa4edbce360189e88072.jpg",
-    "static/media/1.jpg": "/React-Portfolio/static/media/1.cf860457abd18956622c.jpg",
-    "static/media/4.jpg": "/React-Portfolio/static/media/4.b47f0e5fda0f01662b5e.jpg",
-    "static/media/2.jpg": "/React-Portfolio/static/media/2.29516b7941988935ff3c.jpg",
-    "static/media/5.jpg": "/React-Portfolio/static/media/5.76185b5b71783c296f48.jpg",
-    "static/media/3.jpg": "/React-Portfolio/static/media/3.fde2e9a36d35974e9b44.jpg",
-    "static/media/My-Resume.pdf": "/React-Portfolio/static/media/My-Resume.32b810925292f5b377bb.pdf",
-    "static/media/6.jpg": "/React-Portfolio/static/media/6.5d926e6d017401c77481.jpg",
-    "index.html": "/React-Portfolio/index.html",
-    "main.00d5aba3.css.map": "/React-Portfolio/static/css/main.00d5aba3.css.map",
-    "main.ed6b6e2b.js.map": "/React-Portfolio/static/js/main.ed6b6e2b.js.map",
-    "787.a2cb61a6.chunk.js.map": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.css": "/static/css/main.00d5aba3.css",
+    "main.js": "/static/js/main.4d407b96.js",
+    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "static/media/profilePic.png": "/static/media/profilePic.304d9c2e5b09fcb85aa5.png",
+    "static/media/0.jpg": "/static/media/0.fa4edbce360189e88072.jpg",
+    "static/media/1.jpg": "/static/media/1.cf860457abd18956622c.jpg",
+    "static/media/4.jpg": "/static/media/4.b47f0e5fda0f01662b5e.jpg",
+    "static/media/2.jpg": "/static/media/2.29516b7941988935ff3c.jpg",
+    "static/media/5.jpg": "/static/media/5.76185b5b71783c296f48.jpg",
+    "static/media/3.jpg": "/static/media/3.fde2e9a36d35974e9b44.jpg",
+    "static/media/My-Resume.pdf": "/static/media/My-Resume.32b810925292f5b377bb.pdf",
+    "static/media/6.jpg": "/static/media/6.5d926e6d017401c77481.jpg",
+    "index.html": "/index.html",
+    "main.00d5aba3.css.map": "/static/css/main.00d5aba3.css.map",
+    "main.4d407b96.js.map": "/static/js/main.4d407b96.js.map",
+    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00d5aba3.css",
-    "static/js/main.ed6b6e2b.js"
+    "static/js/main.4d407b96.js"
   ]
 }
