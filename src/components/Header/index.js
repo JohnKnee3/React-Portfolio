@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 // import Resume from "../Resume";
 
 function Header() {
-  const [currentPage, setCurrentPage] = useState("React-Portfolio");
+  let nowPage = "React-Portfolio";
+  const [currentPage, setCurrentPage] = useState(nowPage);
 
   // const renderPage = () => {
   //   if (currentPage === "About") {
