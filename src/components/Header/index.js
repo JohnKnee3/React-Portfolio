@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 // import Resume from "../Resume";
 
 function Header() {
-  const [currentPage, setCurrentPage] = useState("");
+  const [currentPage, setCurrentPage] = useState("React-Portfolio");
 
   // const renderPage = () => {
   //   if (currentPage === "About") {
@@ -33,17 +33,21 @@ function Header() {
         <ul className="nav nav-tabs">
           <li className="nav-item">
             <Link
-              to="/"
+              to="/React-Portfolio"
               // href="#about"
-              onClick={() => handlePageChange("")}
-              className={currentPage === "" ? "nav-link active" : "nav-link"}
+              onClick={() => handlePageChange("React-Portfolio")}
+              className={
+                currentPage === "React-Portfolio"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
             >
               About
             </Link>
           </li>
           <li className="nav-item">
             <Link
-              to="/Project"
+              to="/React-Portfolio/Project"
               // href="#project"
               onClick={() => handlePageChange("Project")}
               className={
@@ -55,7 +59,7 @@ function Header() {
           </li>
           <li className="nav-item">
             <Link
-              to="Contact"
+              to="/React-Portfolio/Contact"
               // href="#contact"
               onClick={() => handlePageChange("Contact")}
               className={
@@ -68,7 +72,7 @@ function Header() {
 
           <li className="nav-item">
             <Link
-              to="/Resume"
+              to="/React-Portfolio/Resume"
               // href="#resume"
               onClick={() => handlePageChange("Resume")}
               className={
