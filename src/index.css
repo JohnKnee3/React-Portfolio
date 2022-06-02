@@ -387,6 +387,9 @@ a {
 .nav-link:hover {
   color: #595b75;
 }
+.nav-link:focus {
+  color: #595b75;
+}
 
 .footer-container {
   display: flex;
