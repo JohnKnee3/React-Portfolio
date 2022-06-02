@@ -20,21 +20,27 @@ function Header() {
         <ul className="nav nav-tabs">
           <li className="nav-item">
             <Link
-              to="/"
+              to="/React-Portfolio/"
               // href="#about"
               // onClick={() => handlePageChange("/React-Portfolio")}
-              className={currentPage === "/" ? "nav-link active" : "nav-link"}
+              className={
+                currentPage === "/React-Portfolio/"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
             >
               About
             </Link>
           </li>
           <li className="nav-item">
             <Link
-              to="/Project"
+              to="/React-Portfolio/Project"
               // href="#project"
               // onClick={() => handlePageChange("/React-Portfolio/Project")}
               className={
-                currentPage === "/Project" ? "nav-link active" : "nav-link"
+                currentPage === "/React-Portfolio/Project"
+                  ? "nav-link active"
+                  : "nav-link"
               }
             >
               Projects
@@ -42,11 +48,13 @@ function Header() {
           </li>
           <li className="nav-item">
             <Link
-              to="/Contact"
+              to="/React-Portfolio/Contact"
               // href="#contact"
               // onClick={() => handlePageChange("/React-Portfolio/Contact")}
               className={
-                currentPage === "/Contact" ? "nav-link active" : "nav-link"
+                currentPage === "/React-Portfolio/Contact"
+                  ? "nav-link active"
+                  : "nav-link"
               }
             >
               Contact
@@ -55,11 +63,13 @@ function Header() {
 
           <li className="nav-item">
             <Link
-              to="/Resume"
+              to="/React-Portfolio/Resume"
               // href="#resume"
               // onClick={() => handlePageChange("/React-Portfolio/Resume")}
               className={
-                currentPage === "/Resume" ? "nav-link active" : "nav-link"
+                currentPage === "/React-Portfolio/Resume"
+                  ? "nav-link active"
+                  : "nav-link"
               }
             >
               Resume
