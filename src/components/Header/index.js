@@ -19,11 +19,11 @@ function Header() {
         <ul className="nav nav-tabs">
           <li className="nav-item">
             <Link
-              to="/React-Portfolio"
+              to="/React-Portfolio/"
               // href="#about"
               // onClick={() => handlePageChange("/React-Portfolio")}
               className={
-                currentPage === "/React-Portfolio"
+                currentPage === "/React-Portfolio/"
                   ? "nav-link active"
                   : "nav-link"
               }
