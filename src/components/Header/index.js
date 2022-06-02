@@ -1,14 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+// import Nav from "../Nav";
+// import About from "../About";
+// import Project from "../Project";
+// import Contact from "../Contact";
+// import Resume from "../Resume";
 
 function Header() {
-  const url = useLocation().pathname;
+  // let nowPage = "/React-Portfolio";
+  const url = useLocation();
+  const nowPage = url.pathname;
+  const [currentPage, setCurrentPage] = useState(nowPage);
 
-  useEffect(() => {
-    handlePageChange(url);
-  });
+  // console.log("I am {pathname", { pathname });
 
-  const [currentPage, setCurrentPage] = useState(url);
+  // const renderPage = () => {
+  //   if (currentPage === "About") {
+  //     return <About />;
+  //   }
+  //   if (currentPage === "Project") {
+  //     return <Project />;
+  //   }
+
+  //   if (currentPage === "Contact") {
+  //     return <Contact />;
+  //   }
+  //   return <Resume />;
+  // };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
@@ -16,12 +34,13 @@ function Header() {
     <div>
       <div className="header-container">
         <h1 className="my-name my-real-name">John Clark</h1>
+        {/* <Nav currentPage={currentPage} handlePageChange={handlePageChange} /> */}
         <ul className="nav nav-tabs">
           <li className="nav-item">
             <Link
               to="/React-Portfolio"
               // href="#about"
-              // onClick={() => handlePageChange("/React-Portfolio")}
+              onClick={() => handlePageChange("/React-Portfolio")}
               className={
                 currentPage === "/React-Portfolio"
                   ? "nav-link active"
@@ -35,7 +54,7 @@ function Header() {
             <Link
               to="/React-Portfolio/Project"
               // href="#project"
-              // onClick={() => handlePageChange("/React-Portfolio/Project")}
+              onClick={() => handlePageChange("/React-Portfolio/Project")}
               className={
                 currentPage === "/React-Portfolio/Project"
                   ? "nav-link active"
@@ -49,7 +68,7 @@ function Header() {
             <Link
               to="/React-Portfolio/Contact"
               // href="#contact"
-              // onClick={() => handlePageChange("/React-Portfolio/Contact")}
+              onClick={() => handlePageChange("/React-Portfolio/Contact")}
               className={
                 currentPage === "/React-Portfolio/Contact"
                   ? "nav-link active"
@@ -64,7 +83,7 @@ function Header() {
             <Link
               to="/React-Portfolio/Resume"
               // href="#resume"
-              // onClick={() => handlePageChange("/React-Portfolio/Resume")}
+              onClick={() => handlePageChange("/React-Portfolio/Resume")}
               className={
                 currentPage === "/React-Portfolio/Resume"
                   ? "nav-link active"
@@ -76,6 +95,7 @@ function Header() {
           </li>
         </ul>
       </div>
+      {/* <div>{renderPage()}</div> */}
     </div>
   );
 }
