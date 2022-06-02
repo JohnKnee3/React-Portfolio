@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 function Header() {
   const url = useLocation().pathname;
+  console.log("I am url", url);
 
   useEffect(() => {
     handlePageChange(url);
@@ -19,27 +20,21 @@ function Header() {
         <ul className="nav nav-tabs">
           <li className="nav-item">
             <Link
-              to="/React-Portfolio/"
+              to="/"
               // href="#about"
               // onClick={() => handlePageChange("/React-Portfolio")}
-              className={
-                currentPage === "/React-Portfolio/"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
+              className={currentPage === "/" ? "nav-link active" : "nav-link"}
             >
               About
             </Link>
           </li>
           <li className="nav-item">
             <Link
-              to="/React-Portfolio/Project"
+              to="/Project"
               // href="#project"
               // onClick={() => handlePageChange("/React-Portfolio/Project")}
               className={
-                currentPage === "/React-Portfolio/Project"
-                  ? "nav-link active"
-                  : "nav-link"
+                currentPage === "/Project" ? "nav-link active" : "nav-link"
               }
             >
               Projects
@@ -47,13 +42,11 @@ function Header() {
           </li>
           <li className="nav-item">
             <Link
-              to="/React-Portfolio/Contact"
+              to="/Contact"
               // href="#contact"
               // onClick={() => handlePageChange("/React-Portfolio/Contact")}
               className={
-                currentPage === "/React-Portfolio/Contact"
-                  ? "nav-link active"
-                  : "nav-link"
+                currentPage === "/Contact" ? "nav-link active" : "nav-link"
               }
             >
               Contact
@@ -62,13 +55,11 @@ function Header() {
 
           <li className="nav-item">
             <Link
-              to="/React-Portfolio/Resume"
+              to="/Resume"
               // href="#resume"
               // onClick={() => handlePageChange("/React-Portfolio/Resume")}
               className={
-                currentPage === "/React-Portfolio/Resume"
-                  ? "nav-link active"
-                  : "nav-link"
+                currentPage === "/Resume" ? "nav-link active" : "nav-link"
               }
             >
               Resume
