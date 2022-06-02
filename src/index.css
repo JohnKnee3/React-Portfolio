@@ -388,6 +388,11 @@ a {
   color: #595b75;
 }
 
+.nav-link:focus {
+  color: #595b75;
+  border: none;
+}
+
 .footer-container {
   display: flex;
   flex-wrap: wrap;
