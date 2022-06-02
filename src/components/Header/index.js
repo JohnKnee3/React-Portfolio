@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 function Header() {
   const url = useLocation().pathname;
+  console.log("I am url", url);
 
   useEffect(() => {
     handlePageChange(url);
@@ -19,11 +20,11 @@ function Header() {
         <ul className="nav nav-tabs">
           <li className="nav-item">
             <Link
-              to="/React-Portfolio"
+              to="/React-Portfolio/"
               // href="#about"
               // onClick={() => handlePageChange("/React-Portfolio")}
               className={
-                currentPage === "/React-Portfolio"
+                currentPage === "/React-Portfolio/"
                   ? "nav-link active"
                   : "nav-link"
               }
