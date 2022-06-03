@@ -376,6 +376,9 @@ a {
 .leia-made-me {
   margin-left: 18px;
 }
+.resume-grow:hover {
+  transform: scale(1.02);
+}
 .my-real-name {
   margin-top: 0;
 }

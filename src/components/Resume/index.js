@@ -1,5 +1,5 @@
 import React from "react";
-import MyResume from "../../assets/resumes/My-Resume.pdf";
+import MyResume from "../../assets/resumes/John-Clark-Resume.pdf";
 function Resume() {
   return (
     <div className="resume-container">
@@ -7,6 +7,7 @@ function Resume() {
         <h2>download resume </h2>
         <a className="leia-made-me" href={MyResume} download>
           <img
+            className="resume-grow"
             src="https://img.icons8.com/cute-clipart/64/000000/pdf.png"
             alt="pdf icon"
           />
