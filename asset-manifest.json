@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.63fbff71.css",
-    "main.js": "/React-Portfolio/static/js/main.70aa20fc.js",
+    "main.css": "/React-Portfolio/static/css/main.61001b81.css",
+    "main.js": "/React-Portfolio/static/js/main.27330241.js",
     "static/js/787.a2cb61a6.chunk.js": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/profilePic.png": "/React-Portfolio/static/media/profilePic.304d9c2e5b09fcb85aa5.png",
     "static/media/0.jpg": "/React-Portfolio/static/media/0.fa4edbce360189e88072.jpg",
@@ -10,15 +10,15 @@
     "static/media/2.jpg": "/React-Portfolio/static/media/2.29516b7941988935ff3c.jpg",
     "static/media/5.jpg": "/React-Portfolio/static/media/5.76185b5b71783c296f48.jpg",
     "static/media/3.jpg": "/React-Portfolio/static/media/3.fde2e9a36d35974e9b44.jpg",
-    "static/media/John-Clark-Resume.pdf": "/React-Portfolio/static/media/John-Clark-Resume.32b810925292f5b377bb.pdf",
+    "static/media/John-Clark-Resume.pdf": "/React-Portfolio/static/media/John-Clark-Resume.a6e936b504907e2e1284.pdf",
     "static/media/6.jpg": "/React-Portfolio/static/media/6.5d926e6d017401c77481.jpg",
     "index.html": "/React-Portfolio/index.html",
-    "main.63fbff71.css.map": "/React-Portfolio/static/css/main.63fbff71.css.map",
-    "main.70aa20fc.js.map": "/React-Portfolio/static/js/main.70aa20fc.js.map",
+    "main.61001b81.css.map": "/React-Portfolio/static/css/main.61001b81.css.map",
+    "main.27330241.js.map": "/React-Portfolio/static/js/main.27330241.js.map",
     "787.a2cb61a6.chunk.js.map": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63fbff71.css",
-    "static/js/main.70aa20fc.js"
+    "static/css/main.61001b81.css",
+    "static/js/main.27330241.js"
   ]
 }
