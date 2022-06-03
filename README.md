@@ -12,7 +12,7 @@ This is a reworking of the original portfolio page we made early on in class. Th
 
 ## Usage
 
-To use this page simply click on the <a href="https://john-clark-3-portfolio.herokuapp.com/">link here</a>.
+To use this page simply click on the <a href="https://johnknee3.github.io/React-Portfolio/">link here</a>.
 
 ## Questions
 
