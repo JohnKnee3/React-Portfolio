@@ -8,11 +8,11 @@
 ## Description
 
 This is a reworking of the original portfolio page we made early on in class. This time we designed from the ground up to react and included links to several of our projects.
-<img src="./src/assets/images/Screenshot.jpg" alt="Brief snip programs main page.">
+<img src="./src/assets/images/profile.jpg" alt="Brief snip programs projects page.">
 
 ## Usage
 
-To use this page simply click on the <a href="https://johnknee3.github.io/React-Portfolio/">GitPages link here</a>.
+To use this page simply click on the <a href="https://john-clark-3-portfolio.herokuapp.com/">link here</a>.
 
 ## Questions
 
