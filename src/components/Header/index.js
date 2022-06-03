@@ -16,7 +16,7 @@ function Header() {
   return (
     <div>
       <div className="header-container">
-        <h1 className="my-name my-real-name">John Clark</h1>
+        <h1 className="my-name my-real-name">John Clark 3</h1>
         <ul className="nav nav-tabs">
           <li className="nav-item">
             <Link
